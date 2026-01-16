@@ -1,0 +1,180 @@
+/* ---------- GLOBAL ---------- */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #111827;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 10;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar-tag {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ---------- PAGE ---------- */
+.todo-page {
+  min-height: calc(100vh - 140px);
+  padding: 40px 16px;
+}
+
+.todo-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.todo-hero h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.todo-hero p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* ---------- CARD ---------- */
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-card {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- HEADER ---------- */
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.todo-header span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ---------- INPUT ---------- */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.todo-input input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.todo-input button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background: #4f46e5;
+}
+
+/* ---------- LIST ---------- */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+.todo-item:hover {
+  background: #f3f4f6;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 15px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* ---------- DELETE ---------- */
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+/* ---------- FOOTER ---------- */
+.todo-footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
